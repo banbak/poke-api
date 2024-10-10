@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon API Project</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Permanent+Marker&family=Pirata+One&display=swap');
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Buscador Pokémon <img class="pokeball" src="pokeball.png" alt="pokeball"></h1>
+        <input type="text" id="pokemonNameInput" placeholder="Ingresa el nombre del Pokémon">
+        <button onclick="getPokemon()">Buscar Pokémon</button>
+        
+        <div id="pokemonContainer" class="pokemon-info">
+            <!-- La información del Pokémon aparecerá aquí -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

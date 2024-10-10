@@ -1,0 +1,133 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0c0f27; /* Fondo oscuro para el tema futurista */
+    color: #e3d8ff; /* Color de texto claro */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #5f67b4; /* Color índigo */
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+.nombre {
+    color: rgb(250, 199, 69);
+    font-family: 'Pirata one';
+    font-size: 80px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.pokeball {
+    width: 40px;
+    height: 40px;
+}
+.pokeball:hover {
+    transform: none;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+}
+
+/* Imagen del Pokémon */
+img {
+    width: auto; /*200px;*/
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Animación al hacer hover */
+}
+
+img:hover {
+    transform: scale(1.2); /* Aumentar tamaño al hacer hover */
+}
+
+/* Botones */
+button {
+    background-color: #5f67b4; /* Botones en tono índigo */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #4a4f99; /* Color más oscuro al hacer hover */
+    transform: scale(1.05); /* Efecto de agrandado */
+}
+
+/* Contenedor de la información del Pokémon */
+.pokemon-info {
+    background-color: #1a1d40;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Sombra suave */
+    margin-top: 20px;
+}
+
+/* Animación suave al cargar la información */
+.pokemon-info {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.pokemon-info.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    img {
+        width: 150px;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+        font-size: 1.2em;
+    }
+}
+
+/* Estilo del input */
+input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 25px;
+    border: 2px solid #5f67b4; /* Borde en tono índigo */
+    background-color: #1a1d40; /* Fondo oscuro */
+    color: white;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]::placeholder {
+    color: #a0a4bf; /* Color claro para el placeholder */
+}
+
+input[type="text"]:focus {
+    border-color: #4a4f99; /* Color más claro al hacer focus */
+    box-shadow: 0 0 10px rgba(94, 103, 180, 0.6); /* Efecto de resplandor */
+    outline: none; /* Quitar el borde predeterminado de focus */
+}
